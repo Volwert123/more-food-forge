@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:dried_kelp",
+    "more_food:kelp_pieces"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_food:kelp_soup"
+  }
+}

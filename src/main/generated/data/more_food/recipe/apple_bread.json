@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:wheat",
+    "minecraft:wheat",
+    "minecraft:apple",
+    "more_food:apple_pieces"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_food:apple_bread"
+  }
+}

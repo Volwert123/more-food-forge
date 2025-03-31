@@ -21,6 +21,7 @@ public class MFEnglishLanguageProvider extends LanguageProvider {
         add(MFItems.CARROT_SOUP.get(), "Carrot Soup");
         add(MFItems.CARROT_BREAD.get(), "Carrot Bread");
         add(MFItems.CARROT_PIE.get(), "Carrot Pie");
+        add(MFItems.CHOCOLATE_CARROT.get(), "Chocolate Carrot");
 
         // Apple Items
         add(MFItems.IRON_APPLE.get(), "Iron Apple");
@@ -31,6 +32,7 @@ public class MFEnglishLanguageProvider extends LanguageProvider {
         add(MFItems.APPLE_SOUP.get(), "Apple Soup");
         add(MFItems.APPLE_BREAD.get(), "Apple Bread");
         add(MFItems.APPLE_PIE.get(), "Apple Pie");
+        add(MFItems.CHOCOLATE_APPLE.get(), "Chocolate Apple");
 
         // Kelp Items
         add(MFItems.IRON_KELP.get(), "Iron Kelp");
@@ -39,6 +41,7 @@ public class MFEnglishLanguageProvider extends LanguageProvider {
         add(MFItems.EMERALD_KELP.get(), "Emerald Kelp");
         add(MFItems.KELP_PIECES.get(), "Kelp Pieces");
         add(MFItems.KELP_SOUP.get(), "Kelp Soup");
+        add(MFItems.CHOCOLATE_DRIED_KELP.get(), "Chocolate Dried Kelp");
 
         // Potato Items
         add(MFItems.IRON_POTATO.get(), "Iron Potato");
@@ -55,6 +58,7 @@ public class MFEnglishLanguageProvider extends LanguageProvider {
         add(MFItems.PHANTOM_SOUP.get(), "Phantom Soup");
 
         // Pufferfish Items
+        add(MFItems.COOKED_PUFFERFISH.get(), "Cooked Pufferfish");
         add(MFItems.PUFFERFISH_PIECES.get(), "Pufferfish Pieces");
         add(MFItems.PUFFERFISH_SOUP.get(), "Pufferfish Soup");
 
@@ -118,10 +122,8 @@ public class MFEnglishLanguageProvider extends LanguageProvider {
         add(MFItems.SUSHI_BEETROOT.get(), "Sushi Beetroot");
         add(MFItems.SUSHI_SALMON.get(), "Sushi Salmon");
 
-        // Egg Items
+        // Egg & Bacon Items
         add(MFItems.COOKED_EGG.get(), "Cooked Egg");
-
-        // Bacon Items
         add(MFItems.RAW_BACON.get(), "Raw Bacon");
         add(MFItems.COOKED_BACON.get(), "Cooked Bacon");
         add(MFItems.COOKED_BACON_EGG.get(), "Cooked Bacon Egg");
@@ -129,5 +131,8 @@ public class MFEnglishLanguageProvider extends LanguageProvider {
         // Chocolate Items
         add(MFItems.CHOCOLATE.get(), "Chocolate");
         add(MFItems.CHOCOLATE_BAR.get(), "Chocolate Bar");
+
+        // Sweet Berries Items
+        add(MFItems.CHOCOLATE_SWEET_BERRIES.get(), "Chocolate Sweet Berries");
     }
 }

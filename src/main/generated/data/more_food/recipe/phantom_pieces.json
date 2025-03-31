@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:phantom_membrane"
+  ],
+  "result": {
+    "count": 4,
+    "id": "more_food:phantom_pieces"
+  }
+}

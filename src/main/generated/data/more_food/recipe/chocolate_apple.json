@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:apple",
+    "C": "more_food:chocolate"
+  },
+  "pattern": [
+    "   ",
+    " # ",
+    " C "
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_food:chocolate_apple"
+  }
+}

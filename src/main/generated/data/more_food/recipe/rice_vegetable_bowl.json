@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "more_food:cooked_bamboo",
+    "B": "minecraft:bowl",
+    "C": "minecraft:carrot",
+    "R": "more_food:rice"
+  },
+  "pattern": [
+    " AC",
+    "RRR",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_food:rice_vegetable_bowl"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:carrot",
+    "I": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    "III",
+    "I#I",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_food:iron_carrot"
+  }
+}

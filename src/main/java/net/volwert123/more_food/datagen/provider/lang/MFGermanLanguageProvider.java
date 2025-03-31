@@ -21,6 +21,7 @@ public class MFGermanLanguageProvider extends LanguageProvider {
         add(MFItems.CARROT_SOUP.get(), "Karottensuppe");
         add(MFItems.CARROT_BREAD.get(), "Karottenbrot");
         add(MFItems.CARROT_PIE.get(), "Karottenkuchen");
+        add(MFItems.CHOCOLATE_CARROT.get(), "Schokoladenkarotte");
 
         // Apple Items
         add(MFItems.IRON_APPLE.get(), "Eisenapfel");
@@ -31,6 +32,7 @@ public class MFGermanLanguageProvider extends LanguageProvider {
         add(MFItems.APPLE_SOUP.get(), "Apfelsuppe");
         add(MFItems.APPLE_BREAD.get(), "Apfelbrot");
         add(MFItems.APPLE_PIE.get(), "Apfelkuchen");
+        add(MFItems.CHOCOLATE_APPLE.get(), "Schokoladenapfel");
 
         // Kelp Items
         add(MFItems.IRON_KELP.get(), "Eisenseetang");
@@ -39,6 +41,7 @@ public class MFGermanLanguageProvider extends LanguageProvider {
         add(MFItems.EMERALD_KELP.get(), "Smaragdseetang");
         add(MFItems.KELP_PIECES.get(), "Seetangstücke");
         add(MFItems.KELP_SOUP.get(), "Seetangsuppe");
+        add(MFItems.CHOCOLATE_DRIED_KELP.get(), "Getrockneter Schokoladenseetang");
 
         // Potato Items
         add(MFItems.IRON_POTATO.get(), "Eisenkartoffel");
@@ -55,6 +58,7 @@ public class MFGermanLanguageProvider extends LanguageProvider {
         add(MFItems.PHANTOM_SOUP.get(), "Phantomsuppe");
 
         // Pufferfish Items
+        add(MFItems.COOKED_PUFFERFISH.get(), "Gebratener Kugelfisch");
         add(MFItems.PUFFERFISH_PIECES.get(), "Kugelfischstücke");
         add(MFItems.PUFFERFISH_SOUP.get(), "Kugelfischsuppe");
 
@@ -118,10 +122,8 @@ public class MFGermanLanguageProvider extends LanguageProvider {
         add(MFItems.SUSHI_BEETROOT.get(), "Rote Bete Sushi");
         add(MFItems.SUSHI_SALMON.get(), "Lachs Sushi");
 
-        // Egg Items
+        // Egg & Bacon Items
         add(MFItems.COOKED_EGG.get(), "Gekochtes Ei");
-
-        // Bacon Items
         add(MFItems.RAW_BACON.get(), "Roher Speck");
         add(MFItems.COOKED_BACON.get(), "Gebratener Speck");
         add(MFItems.COOKED_BACON_EGG.get(), "Gebratenes Speckei");
@@ -129,5 +131,8 @@ public class MFGermanLanguageProvider extends LanguageProvider {
         // Chocolate Items
         add(MFItems.CHOCOLATE.get(), "Schokolade");
         add(MFItems.CHOCOLATE_BAR.get(), "Schokoladentafel");
+
+        // Sweet Berries Items
+        add(MFItems.CHOCOLATE_SWEET_BERRIES.get(), "Schokoladensüßbeeren");
     }
 }

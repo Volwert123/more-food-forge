@@ -9,7 +9,10 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.volwert123.more_food.MoreFood;
 import net.volwert123.more_food.datagen.provider.*;
-import net.volwert123.more_food.datagen.provider.lang.*;
+import net.volwert123.more_food.datagen.provider.lang.MFEnglishLanguageProvider;
+import net.volwert123.more_food.datagen.provider.lang.MFFrenchLanguageProvider;
+import net.volwert123.more_food.datagen.provider.lang.MFGermanLanguageProvider;
+import net.volwert123.more_food.datagen.provider.lang.MFRussianLanguageProvider;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -27,13 +30,11 @@ public class MFDataGenerators {
         generator.addProvider(event.includeClient(), new MFGermanLanguageProvider(packOutput));
         generator.addProvider(event.includeClient(), new MFRussianLanguageProvider(packOutput));
 
-        generator.addProvider(event.includeClient(), new MFBlockStateProvider(packOutput, existingFileHelper));
-        generator.addProvider(event.includeClient(), new MFItemModelProvider(packOutput, existingFileHelper));
-
         generator.addProvider(event.includeServer(), new MFGlobalLootModifierProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), MFLootTableProvider.create(packOutput, lookupProvider));
+        generator.addProvider(event.includeClient(), new MFModelProvider(packOutput));
+        generator.addProvider(event.includeServer(), new MFRecipeProvider.Runner(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), new MFTagsProvider.Items(packOutput, lookupProvider, existingFileHelper));
         generator.addProvider(event.includeServer(), new MFTagsProvider.Blocks(packOutput, lookupProvider, existingFileHelper));
-        generator.addProvider(event.includeServer(), MFLootTableProvider.create(packOutput, lookupProvider));
-        generator.addProvider(event.includeServer(), new MFRecipeProvider(packOutput, lookupProvider));
     }
 }

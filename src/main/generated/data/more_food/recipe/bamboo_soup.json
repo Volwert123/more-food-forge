@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:bamboo",
+    "more_food:bamboo_pieces"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_food:bamboo_soup"
+  }
+}

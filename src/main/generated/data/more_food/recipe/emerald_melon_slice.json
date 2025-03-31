@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:melon_slice",
+    "E": "minecraft:emerald"
+  },
+  "pattern": [
+    "EEE",
+    "E#E",
+    "EEE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_food:emerald_melon_slice"
+  }
+}

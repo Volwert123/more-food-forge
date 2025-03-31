@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:dried_kelp",
+    "C": "more_food:chocolate"
+  },
+  "pattern": [
+    "   ",
+    " # ",
+    " C "
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_food:chocolate_dried_kelp"
+  }
+}

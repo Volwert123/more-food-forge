@@ -1,24 +1,23 @@
-# eclipse
-bin
-*.launch
-.settings
+# Eclipse
 .metadata
-.classpath
-.project
+.settings/
+*.classpath
+*.project
+*.launch
 
-# idea
-out
+# IntelliJ IDEA
+.idea/
+*.iml
 *.ipr
 *.iws
-*.iml
-.idea
+out/
 
-# gradle
-build
-.gradle
+# Gradle
+.gradle/
+build/
 
-# other
-eclipse
+# Other
 run
 run-data
-src/generated/resources/.cache
+eclipse
+/src/main/generated/.cache/

@@ -27,7 +27,7 @@ public class MFPufferfishSoupItem extends Item {
         Player player = livingEntity instanceof Player ? (Player) livingEntity : null;
         if (player instanceof ServerPlayer) CriteriaTriggers.CONSUME_ITEM.trigger((ServerPlayer) player,stack);
         if (!level.isClientSide) livingEntity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 600));
-        if (!level.isClientSide) livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 700));
+        if (!level.isClientSide) livingEntity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 700));
         if (player != null) {
             player.awardStat(Stats.ITEM_USED.get(this));
             player.getFoodData().eat(foodProperties);

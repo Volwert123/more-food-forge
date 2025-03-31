@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "more_food:chocolate"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_food:chocolate_bar"
+  }
+}

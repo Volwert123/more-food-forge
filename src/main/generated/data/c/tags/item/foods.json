@@ -1,0 +1,18 @@
+{
+  "values": [
+    "more_food:chocolate_carrot",
+    "more_food:chocolate_apple",
+    "more_food:chocolate_dried_kelp",
+    "more_food:cooked_bamboo",
+    "more_food:rice_chicken_bowl",
+    "more_food:rice_salmon_bowl",
+    "more_food:rice_cod_bowl",
+    "more_food:rice_vegetable_bowl",
+    "more_food:rice_pudding",
+    "more_food:rice_honey_pudding",
+    "#c:foods/sushi",
+    "#c:foods/cooked_egg",
+    "more_food:cooked_bacon_egg",
+    "more_food:chocolate_sweet_berries"
+  ]
+}

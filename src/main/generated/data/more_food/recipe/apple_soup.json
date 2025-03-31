@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:apple",
+    "more_food:apple_pieces"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_food:apple_soup"
+  }
+}

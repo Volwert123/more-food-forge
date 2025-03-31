@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:bamboo",
+    "D": "minecraft:dried_kelp",
+    "R": "more_food:rice"
+  },
+  "pattern": [
+    "R#R",
+    "DDD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_food:sushi_bamboo"
+  }
+}

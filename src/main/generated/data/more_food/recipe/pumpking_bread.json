@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:wheat",
+    "minecraft:wheat",
+    "minecraft:pumpkin",
+    "minecraft:pumpkin_seeds"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_food:pumpking_bread"
+  }
+}

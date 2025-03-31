@@ -1,0 +1,11 @@
+{
+  "values": [
+    "more_food:cooked_phantom",
+    "#c:foods/cooked_rabbit",
+    "#c:foods/cooked_chicken",
+    "#c:foods/cooked_mutton",
+    "#c:foods/cooked_porkchop",
+    "#c:foods/cooked_beef",
+    "#c:foods/cooked_bacon"
+  ]
+}

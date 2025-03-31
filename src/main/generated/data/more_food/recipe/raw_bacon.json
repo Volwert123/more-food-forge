@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:porkchop"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_food:raw_bacon"
+  }
+}

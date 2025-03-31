@@ -21,6 +21,7 @@ public class MFRussianLanguageProvider extends LanguageProvider {
         add(MFItems.CARROT_SOUP.get(), "Морковный суп");
         add(MFItems.CARROT_BREAD.get(), "Морковный хлеб");
         add(MFItems.CARROT_PIE.get(), "Морковный пирог");
+        add(MFItems.CHOCOLATE_CARROT.get(), "Шоколадная морковь");
 
         // Apple Items
         add(MFItems.IRON_APPLE.get(), "Железное яблоко");
@@ -31,6 +32,7 @@ public class MFRussianLanguageProvider extends LanguageProvider {
         add(MFItems.APPLE_SOUP.get(), "Яблочный суп");
         add(MFItems.APPLE_BREAD.get(), "Яблочный хлеб");
         add(MFItems.APPLE_PIE.get(), "Яблочный пирог");
+        add(MFItems.CHOCOLATE_APPLE.get(), "Шоколадное яблоко");
 
         // Kelp Items
         add(MFItems.IRON_KELP.get(), "Железный ламинария");
@@ -39,6 +41,7 @@ public class MFRussianLanguageProvider extends LanguageProvider {
         add(MFItems.EMERALD_KELP.get(), "Изумрудная ламинария");
         add(MFItems.KELP_PIECES.get(), "Кусочки ламинарии");
         add(MFItems.KELP_SOUP.get(), "Ламинарийный суп");
+        add(MFItems.CHOCOLATE_DRIED_KELP.get(), "Сушёная шоколадная ламинария");
 
         // Potato Items
         add(MFItems.IRON_POTATO.get(), "Железный картофель");
@@ -55,6 +58,7 @@ public class MFRussianLanguageProvider extends LanguageProvider {
         add(MFItems.PHANTOM_SOUP.get(), "Фантомный суп");
 
         // Pufferfish Items
+        add(MFItems.COOKED_PUFFERFISH.get(), "Жареный иглобрюх");
         add(MFItems.PUFFERFISH_PIECES.get(), "Кусочки иглобрюха");
         add(MFItems.PUFFERFISH_SOUP.get(), "Иглобрюховый суп");
 
@@ -118,10 +122,8 @@ public class MFRussianLanguageProvider extends LanguageProvider {
         add(MFItems.SUSHI_BEETROOT.get(), "Суши с свёклы");
         add(MFItems.SUSHI_SALMON.get(), "Суши с лососем");
 
-        // Egg Items
+        // Egg & Bacon Items
         add(MFItems.COOKED_EGG.get(), "Варёное яйцо");
-
-        // Bacon Items
         add(MFItems.RAW_BACON.get(), "Сырой бекон");
         add(MFItems.COOKED_BACON.get(), "Жареный бекон");
         add(MFItems.COOKED_BACON_EGG.get(), "Варёное яйцо с беконом");
@@ -129,5 +131,8 @@ public class MFRussianLanguageProvider extends LanguageProvider {
         // Chocolate Items
         add(MFItems.CHOCOLATE.get(), "Шоколад");
         add(MFItems.CHOCOLATE_BAR.get(), "Шоколадная плитка");
+
+        // Sweet Berries Items
+        add(MFItems.CHOCOLATE_SWEET_BERRIES.get(), "Шоколадные сладкие ягоды");
     }
 }

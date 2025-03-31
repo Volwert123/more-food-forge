@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:cooked_porkchop",
+    "D": "minecraft:diamond"
+  },
+  "pattern": [
+    "DDD",
+    "D#D",
+    "DDD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_food:diamond_cooked_porkchop"
+  }
+}

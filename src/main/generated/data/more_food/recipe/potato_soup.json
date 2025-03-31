@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "minecraft:potato",
+    "more_food:potato_pieces"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_food:potato_soup"
+  }
+}

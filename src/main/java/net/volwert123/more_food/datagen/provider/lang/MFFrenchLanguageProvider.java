@@ -21,6 +21,7 @@ public class MFFrenchLanguageProvider extends LanguageProvider {
         add(MFItems.CARROT_SOUP.get(), "Soupe de carotte");
         add(MFItems.CARROT_BREAD.get(), "Pain à la carotte");
         add(MFItems.CARROT_PIE.get(), "Tarte à la carotte");
+        add(MFItems.CHOCOLATE_CARROT.get(), "Carotte en chocolat");
 
         // Apple Items
         add(MFItems.IRON_APPLE.get(), "Pomme de fer");
@@ -31,6 +32,7 @@ public class MFFrenchLanguageProvider extends LanguageProvider {
         add(MFItems.APPLE_SOUP.get(), "Soupe de pomme");
         add(MFItems.APPLE_BREAD.get(), "Pain à la pomme");
         add(MFItems.APPLE_PIE.get(), "Tarte à la pommes");
+        add(MFItems.CHOCOLATE_APPLE.get(), "Pomme en chocolat");
 
         // Kelp Items
         add(MFItems.IRON_KELP.get(), "Algue de fer");
@@ -39,6 +41,7 @@ public class MFFrenchLanguageProvider extends LanguageProvider {
         add(MFItems.EMERALD_KELP.get(), "Algue d'émeraude");
         add(MFItems.KELP_PIECES.get(), "Morceaux d'algue");
         add(MFItems.KELP_SOUP.get(), "Soupe d'algue");
+        add(MFItems.CHOCOLATE_DRIED_KELP.get(), "Algue séchée au chocolat");
 
         // Potato Items
         add(MFItems.IRON_POTATO.get(), "Pomme de terre de fer");
@@ -55,6 +58,7 @@ public class MFFrenchLanguageProvider extends LanguageProvider {
         add(MFItems.PHANTOM_SOUP.get(), "Soupe de phantom");
 
         // Pufferfish Items
+        add(MFItems.COOKED_PUFFERFISH.get(), "Poisson-globe cuit");
         add(MFItems.PUFFERFISH_PIECES.get(), "Morceaux de poisson-globe");
         add(MFItems.PUFFERFISH_SOUP.get(), "Soupe de poisson-globe");
 
@@ -118,10 +122,8 @@ public class MFFrenchLanguageProvider extends LanguageProvider {
         add(MFItems.SUSHI_BEETROOT.get(), "Sushi de betterave");
         add(MFItems.SUSHI_SALMON.get(), "Sushi de saumon");
 
-        // Egg Items
+        // Egg & Bacon Items
         add(MFItems.COOKED_EGG.get(), "Œuf cuit");
-
-        // Bacon Items
         add(MFItems.RAW_BACON.get(), "Bacon cru");
         add(MFItems.COOKED_BACON.get(), "Bacon cuit");
         add(MFItems.COOKED_BACON_EGG.get(), "Œuf au bacon cuit");
@@ -129,5 +131,8 @@ public class MFFrenchLanguageProvider extends LanguageProvider {
         // Chocolate Items
         add(MFItems.CHOCOLATE.get(), "Chocolat");
         add(MFItems.CHOCOLATE_BAR.get(), "Tablette de chocolat");
+
+        // Sweet Berries Items
+        add(MFItems.CHOCOLATE_SWEET_BERRIES.get(), "Baies sucrées au chocolat");
     }
 }
