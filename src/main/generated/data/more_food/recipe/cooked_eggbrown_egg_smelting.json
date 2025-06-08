@@ -1,9 +1,9 @@
 {
-  "type": "minecraft:campfire_cooking",
+  "type": "minecraft:smelting",
   "category": "food",
-  "cookingtime": 600,
+  "cookingtime": 200,
   "experience": 1.0,
-  "ingredient": "minecraft:egg",
+  "ingredient": "minecraft:brown_egg",
   "result": {
     "id": "more_food:cooked_egg"
   }

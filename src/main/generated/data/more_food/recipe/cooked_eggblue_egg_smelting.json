@@ -1,9 +1,9 @@
 {
-  "type": "minecraft:smoking",
+  "type": "minecraft:smelting",
   "category": "food",
-  "cookingtime": 100,
+  "cookingtime": 200,
   "experience": 1.0,
-  "ingredient": "minecraft:egg",
+  "ingredient": "minecraft:blue_egg",
   "result": {
     "id": "more_food:cooked_egg"
   }

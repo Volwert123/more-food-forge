@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_egg": {
+    "has_cooked_egg": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:egg"
+            "items": "minecraft:brown_egg"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_food:cooked_egg_campfire_cooking"
+        "recipe": "more_food:cooked_eggbrown_egg_smelting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_egg"
+      "has_cooked_egg"
     ]
   ],
   "rewards": {
     "recipes": [
-      "more_food:cooked_egg_campfire_cooking"
+      "more_food:cooked_eggbrown_egg_smelting"
     ]
   }
 }

@@ -11,6 +11,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.common.Tags;
 import net.volwert123.more_food.MoreFood;
 import net.volwert123.more_food.registry.MFItems;
 import org.jetbrains.annotations.NotNull;
@@ -137,7 +138,9 @@ public class MFRecipeProvider extends RecipeProvider {
         createSushiRecipe(items, MFItems.SUSHI_SALMON.get(), Items.SALMON).save(output, registerRecipe(MFItems.SUSHI_SALMON.get()));
 
         // Egg Recipes
-        createCookingRecipes(MFItems.COOKED_EGG.get(), Items.EGG, output);
+        SimpleCookingRecipeBuilder.generic(Ingredient.of(Items.EGG), RecipeCategory.FOOD, MFItems.COOKED_EGG.get(), 1.0f,200, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new).unlockedBy(getHasName(MFItems.COOKED_EGG.get()), has(Items.EGG)).save(output, ResourceKey.create(Registries.RECIPE, ResourceLocation.fromNamespaceAndPath(MoreFood.MOD_ID, getItemName(MFItems.COOKED_EGG.get()) + getItemName(Items.EGG) + "_smelting")));
+        SimpleCookingRecipeBuilder.generic(Ingredient.of(Items.BROWN_EGG), RecipeCategory.FOOD, MFItems.COOKED_EGG.get(), 1.0f,200, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new).unlockedBy(getHasName(MFItems.COOKED_EGG.get()), has(Items.BROWN_EGG)).save(output, ResourceKey.create(Registries.RECIPE, ResourceLocation.fromNamespaceAndPath(MoreFood.MOD_ID, getItemName(MFItems.COOKED_EGG.get()) + getItemName(Items.BROWN_EGG) + "_smelting")));
+        SimpleCookingRecipeBuilder.generic(Ingredient.of(Items.BLUE_EGG), RecipeCategory.FOOD, MFItems.COOKED_EGG.get(), 1.0f,200, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new).unlockedBy(getHasName(MFItems.COOKED_EGG.get()), has(Items.BLUE_EGG)).save(output, ResourceKey.create(Registries.RECIPE, ResourceLocation.fromNamespaceAndPath(MoreFood.MOD_ID, getItemName(MFItems.COOKED_EGG.get()) + getItemName(Items.BLUE_EGG) + "_smelting")));
 
         // Bacon Recipes
         createRawBaconRecipe(items).save(output, registerRecipe(MFItems.RAW_BACON.get()));
@@ -231,10 +234,10 @@ public class MFRecipeProvider extends RecipeProvider {
     private ShapelessRecipeBuilder createPieRecipe(HolderGetter<Item> items, ItemLike output, ItemLike input) {
         return ShapelessRecipeBuilder.shapeless(items, RecipeCategory.FOOD, output)
                 .requires(input)
-                .requires(Items.EGG)
+                .requires(Tags.Items.EGGS)
                 .requires(Items.SUGAR)
                 .unlockedBy(getHasName(input), has(input))
-                .unlockedBy(getHasName(Items.EGG), has(Items.EGG))
+                .unlockedBy(getHasName(Items.EGG), has(Tags.Items.EGGS))
                 .unlockedBy(getHasName(Items.SUGAR), has(Items.SUGAR));
     }
 
