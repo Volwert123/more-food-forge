@@ -1,13 +1,12 @@
 package net.volwert123.more_food;
 
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.chunk.ChunkSectionLayer;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.listener.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -22,16 +21,16 @@ public class MoreFood {
     public static final String MOD_ID = "more_food";
 
     public MoreFood(FMLJavaModLoadingContext context) {
-        IEventBus modEventBus = context.getModEventBus();
+        var modBusGroup = context.getModBusGroup();
 
-        MFBlocks.BLOCKS.register(modEventBus);
-        MFCreativeTabs.TABS.register(modEventBus);
-        MFItems.ITEMS.register(modEventBus);
-        MFLootModifiers.LOOT_MODIFIER_SERIALIZERS.register(modEventBus);
+        MFBlocks.BLOCKS.register(modBusGroup);
+        MFCreativeTabs.TABS.register(modBusGroup);
+        MFItems.ITEMS.register(modBusGroup);
+        MFLootModifiers.LOOT_MODIFIER_SERIALIZERS.register(modBusGroup);
 
         MinecraftForge.EVENT_BUS.register(this);
 
-        modEventBus.addListener(this::addCreative);
+        BuildCreativeModeTabContentsEvent.getBus(modBusGroup).addListener(this::addCreative);
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
@@ -47,7 +46,7 @@ public class MoreFood {
         @SubscribeEvent
         @SuppressWarnings("removal")
         public static void onClientSetup(FMLClientSetupEvent event) {
-            ItemBlockRenderTypes.setRenderLayer(MFBlocks.RICE_CROP.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(MFBlocks.RICE_CROP.get(), ChunkSectionLayer.CUTOUT);
         }
     }
 }
